@@ -307,6 +307,7 @@ class KakeiboController extends Controller
         foreach($array_b as $data){
             $result_b += $data['price'];
         }
+        $borrow_mem = '';
 
         if($result_a < $result_b){
             $borrow_mem = 'b';
