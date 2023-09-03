@@ -1,0 +1,392 @@
+/* 共通で使用 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: "にくまるフォント";
+    src:url("../font/07にくまるフォント.otf");
+}
+
+@font-face{
+    font-family: "どきどきファンタジア";
+    src:url("../font/DokiDokiFantasia.otf");
+}
+
+*{
+    font-family: "にくまるフォント";
+    color: #4b4b4b;
+}
+
+body{
+    background-color: #fceff8;
+}
+
+.fit{
+    width: fit-content;
+}
+
+.center{
+    margin: auto;
+}
+
+.block{
+    display: block;
+}
+
+h1{
+    font-family: "どきどきファンタジア";
+    font-size: 100px;
+    width: fit-content;
+    margin: 20px auto;
+    color: #4b4b4b;
+}
+
+h2{
+    font-size: 50px;
+}
+
+.button{
+    background-color: #e383a8;
+    color: #fff;
+}
+
+.content{
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+    padding: 30px 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+input{
+    vertical-align: middle;
+}
+
+
+/* トップページ */
+.top_page{
+    display: flex;
+    justify-content: space-around;
+}
+
+#this_month_data{
+    width: 70%;
+}
+
+#data_chart{
+    margin-top: 20px;
+}
+
+.left_content{
+    width: 45%;
+    margin: 30px;
+}
+
+.right_content{
+    width: 45%;
+    padding-top: 30px;
+}
+
+.category_list{
+    list-style-position: inside;
+}
+
+li{
+    font-size: 30px;
+}
+
+.debt_data p{
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+
+.repayment_form form{
+    margin-top: 30px;
+    display: flex;
+}
+
+
+.repayment_form input{
+    height: 40px;
+}
+
+.repayment_form label{
+    font-size: 40px;
+}
+
+.repayment_button{
+    width:40%;
+    padding: 0 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: large;
+}
+
+.operate{
+    margin-top: 100px;
+}
+
+.edit_button{
+    width:80%;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    font-size: 30px;
+    margin: 50px auto;
+    display: block;
+}
+
+/* データ追加、編集ページ */
+.edit_content{
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+    padding: 30px 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.edit_left_content{
+    width: 45%;
+    margin: 30px;
+}
+
+.edit_right_content{
+    width: 45%;
+    padding-top: 30px;
+}
+
+.data_add_page{
+    justify-content: space-around;
+    display: flex;
+}
+
+
+.image_add_form p{
+    padding-bottom: 10px;
+}
+
+.image_add_form{
+    font-size: 20px;
+}
+
+.preview{
+    height: 600px;
+    overflow: auto;
+}
+
+.preview_image{
+    width: 100%;
+}
+
+.data_input{
+    list-style-position: inside;
+    margin: 50px 0 0 50px;
+}
+
+.data_input li{
+    padding: 10px 0;
+}
+
+.right_content input,.right_content select{
+    font-size: 90%;
+    max-width: 40%;
+}
+
+.pay_type_choice{
+    margin-top: 30px;
+}
+
+.pay_type_choice input{
+    transform: scale(2);
+}
+
+.pay_full{
+    margin-left: 25px;
+}
+
+
+.transition_button{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 50px 0 0;
+}
+
+.return_button{
+    background-color: #d8c3cd;
+    width:40%;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    font-size: 30px;
+    display: block;
+}
+
+.data_add_button{
+    width:40%;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    font-size: 30px;
+    display: block;
+}
+
+.err_message{
+    color: red;
+    font-size: small;
+}
+
+/* データ確認ページのテーブル用 */
+
+.pay_table{
+    width: 90%;
+    margin-top: 30px;
+    max-height: 600px;
+    overflow: auto;
+}
+
+.pay_table th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #e383a8;
+    color: #fff;
+    height: 25px;
+}
+
+.pay_data{
+    width: 100%;
+    text-align: center;
+}
+
+.pay_data td{
+    width: 14%;
+    height: 25px;
+}
+
+
+.group0{
+    background-color: #faf5f8;
+}
+
+.group1{
+    background-color: #fceff8;
+}
+
+.wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.detail form{
+    width: 40%;
+}
+
+.detail button{
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+.detail_button{
+    width: 100%;
+}
+
+.delete_button{
+    width: 100%;
+    background-color: #d8c3cd;
+    color: #fff;
+}
+
+.data_content .return_button{
+    width: 20%;
+    margin-top: 30px;
+}
+
+
+/* 過去のデータ確認ページ */
+.select_month{
+    display: flex;
+}
+
+.select_month input{
+    font-size: 40px;
+}
+
+.select_month label{
+    font-size: 50px;
+}
+
+.select_month button{
+    padding: 0 20px;
+    margin-left: 30px;
+    border-radius: 20px;
+    border: none;
+    font-size: large;
+}
+
+
+/* データ確認・編集ページ */
+.data_update_page{
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+}
+.image_update_form p{
+    padding-bottom: 10px;
+}
+
+.image_update_form{
+    width: 100%;
+    font-size: 20px;
+}
+
+.data_update li{
+    padding: 10px 0;
+}
+
+.data_update{
+    list-style-position: inside;
+    margin: 50px 0 0 50px;
+}
+
+.data_update_button{
+    width:40%;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    font-size: 30px;
+    display: block;
+}
+
+.update_content .delete_button{
+    background-color: #4b4b4b;
+    color: #fff;
+    border: none;
+    width:40%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+.delete_form{
+    text-align: center;
+}
+
+/* 登録完了ページ */
+.move_button button{
+    width:40%;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    font-size: 30px;
+    margin: 50px auto;
+    display: block;
+}
+
