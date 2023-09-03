@@ -10,7 +10,7 @@ class RuleConst{
         "shop" => "required",
         "price" => "required",
         "pay_type" => "required",
-        "return_money" => "required",
+        // "return_money" => "required",
     ];
 
     const MESSAGE = [
