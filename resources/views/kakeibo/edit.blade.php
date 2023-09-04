@@ -48,7 +48,7 @@
                         </li>
 
                         <li>店名
-                            <input name="shop" type="text" value="{{ $store }}">
+                            <input name="shop" type="text" value="{{ $shop }}">
                             @error('shop')
                             <p class="err_message">{{ $message }}</p>
                             @enderror

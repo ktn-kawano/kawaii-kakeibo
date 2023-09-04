@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->date('buy_date');
             $table->integer('price');
-            $table->string('shop');
+            $table->string('store');
             $table->string('category');
             $table->string('paid_member');
             $table->integer('percentage_a');

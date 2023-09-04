@@ -4,13 +4,13 @@ namespace App\Consts;
 
 class RuleConst{
     const RULES = [
-        "new_image" => "image|mimes:jpeg,png",
-        "no_image" => "required_without:new_image",
-        "date" => "required",
-        "shop" => "required",
-        "price" => "required",
-        "pay_type" => "required",
-        "return_money" => "required",
+        // "new_image" => "image|mimes:jpeg,png",
+        // "no_image" => "required_without:new_image",
+        // "date" => "required",
+        // "shop" => "required",
+        // "price" => "required",
+        // "pay_type" => "required",
+        // "return_money" => "required",
     ];
 
     const MESSAGE = [
